@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run open-browser && next dev -p 3000",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "open-browser": "start http://localhost:3000"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
@@ -24,7 +25,7 @@
     "framer-motion": "^4.1.17",
     "jsonwebtoken": "^8.5.1",
     "material-table": "^1.69.3",
-    "next": "^11.1.2",
+    "next": "^11.1.4",
     "npm": "^8.1.0",
     "pdfmake": "^0.2.4",
     "react": "^17.0.2",
